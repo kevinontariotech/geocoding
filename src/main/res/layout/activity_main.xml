@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:text="GeoLocator"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SearchAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Select Address"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: _____________"
+        android:textSize="20sp"
+        android:layout_margin="14dp"
+        android:layout_below="@+id/SearchAddress"/>
+
+    <TextView
+        android:id="@+id/Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: _____________"
+        android:textSize="20sp"
+        android:layout_margin="14dp"
+        android:layout_below="@+id/Latitude"/>
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: _____________"
+        android:textSize="20sp"
+        android:layout_margin="14dp"
+        android:layout_below="@+id/Longitude" />
+
+    <Button
+        android:id="@+id/Load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:layout_margin="14dp"
+        android:layout_below="@id/Address"/>
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_margin="14dp"
+        android:layout_below="@id/Address"
+        android:layout_toEndOf="@id/Load"/>
+
+    <EditText
+        android:id="@+id/AddId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter ID to Update"
+        android:layout_margin="14dp"
+        android:layout_below="@id/Load"/>
+
+    <EditText
+        android:id="@+id/AddLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Latitude"
+        android:layout_margin="14dp"
+        android:layout_below="@id/AddId"/>
+
+    <EditText
+        android:id="@+id/AddLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Longitude"
+        android:layout_margin="14dp"
+        android:layout_below="@id/AddLatitude"/>
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_margin="14dp"
+        android:layout_below="@id/AddLongitude"/>
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_margin="14dp"
+        android:layout_below="@id/AddLongitude"
+        android:layout_toEndOf="@id/Add"/>
+
+
+
+</RelativeLayout>
